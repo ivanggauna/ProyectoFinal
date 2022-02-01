@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&family=Teko:wght@300;400&display=swap");
+body {
+  background-color: lightblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../imagenes/backgroundimage.jpg");
+}
+
+.primary-header {
+  background-color: #0e131f;
+}
+
+.primary-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.primary-header nav img {
+  padding: 20px 0 0 20px;
+}
+
+.primary-header nav ul {
+  color: white;
+}
+
+.primary-header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 4rem;
+}
+
+.primary-header nav ul li a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.primary-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  color: white;
+}
+
+.secondary-header {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Teko', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.guion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.main-section .main-image {
+  padding-right: 2em;
+}
+
+.main-section .btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.third-header {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Teko', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  padding-right: 12em;
+  color: white;
+}
+
+.third-header div {
+  background-color: #dc3545;
+  padding: 5px 5px 0 5px;
+}
+
+.secondary-section {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Teko', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  font-size: 1.7rem;
+  margin-top: 0.5em;
+  color: white;
+}
+
+.secondary-section ul {
+  background-color: #dc3545;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondary-section ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.secondary-section ul li img {
+  padding-bottom: 23px;
+}
+
+.secondary-section ul li h3 {
+  font-size: 1.7rem;
+}
+
+/* font-size: rem
+width: % in combination with a max-width, ch
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em
+media queries: em
+
+px only for little things like shadows, borders etc.
+ */
+/*# sourceMappingURL=style.css.map */
