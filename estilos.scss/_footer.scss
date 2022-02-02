@@ -1,0 +1,23 @@
+.main-footer {
+    background-image: url('../imagenes/backgroundFooter.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    color: whitesmoke;
+    padding: 1em 0 1em 2em;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-contact{
+    color: white;
+
+    h3{
+        padding: 10px 10px 10px ;
+    }
+    div{
+        padding: 10px 10px 10px;
+    }
+}

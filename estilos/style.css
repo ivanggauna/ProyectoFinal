@@ -87,13 +87,26 @@ main {
   padding-top: 1em;
 }
 
+.main-section div {
+  padding: 1em;
+}
+
 .main-section .main-image {
-  padding-right: 2em;
+  padding: 2em;
+  background-color: hotpink;
+  background-image: url("../imagenes/fondoImagenes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-section .btn {
-  background-color: #dc3545;
+  background-color: #d83442;
   color: white;
+}
+
+.main-section .btn:hover {
+  color: black;
 }
 
 .third-header {
@@ -115,7 +128,10 @@ main {
 }
 
 .third-header div {
-  background-color: #dc3545;
+  background-image: url("../imagenes/backgroundTextos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px 5px 0 5px;
 }
 
@@ -134,7 +150,10 @@ main {
 }
 
 .secondary-section ul {
-  background-color: #dc3545;
+  background-image: url("../imagenes/backgroundTextos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,9 +165,11 @@ main {
 }
 
 .secondary-section ul li {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.3rem;
   list-style: none;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .secondary-section ul li img {
@@ -157,6 +178,31 @@ main {
 
 .secondary-section ul li h3 {
   font-size: 1.7rem;
+}
+
+.main-footer {
+  background-image: url("../imagenes/backgroundFooter.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  color: whitesmoke;
+  padding: 1em 0 1em 2em;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section-contact {
+  color: white;
+}
+
+.section-contact h3 {
+  padding: 10px 10px 10px;
+}
+
+.section-contact div {
+  padding: 10px 10px 10px;
 }
 
 /* font-size: rem
