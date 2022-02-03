@@ -1,55 +1,53 @@
-.buscador{
+.buscador {
     display: flex;
     justify-content: center;
     margin: 1em 0em 1em 0;
-   
 
-        .src{
-            width: 69%;
-        }
-    
-    
+
+    .src {
+        width: 69%;
+    }
+
+
 }
 
-.vallejo-title{
+.vallejo-title {
     display: flex;
     justify-content: flex-start;
     color: white;
     margin-left: 12.7em;
-    
+
     font-size: .8rem;
-  
-    h3{
+
+    h3 {
         width: 60%;
     }
 
-    p{
+    p {
         width: 60%;
     }
 
 }
 
-.galeria{
+.galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
     margin-left: 10em;
-    
 
-    img{
+
+    img {
         width: 50%;
         padding: 3px;
     }
-    
-    .compra{
+
+    .compra {
         padding-left: 25px;
 
-    .btn{
-       padding-left: 10px;
-      
-       
-       width: 40%;
-       height: 40%;
+        .btn {
+            padding-left: 10px;
+            width: 40%;
+            height: 40%;
+        }
     }
-}
 }
