@@ -205,6 +205,65 @@ main {
   padding: 10px 10px 10px;
 }
 
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 0em 1em 0;
+}
+
+.buscador .src {
+  width: 69%;
+}
+
+.vallejo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+  margin-left: 12.7em;
+  font-size: .8rem;
+}
+
+.vallejo-title h3 {
+  width: 60%;
+}
+
+.vallejo-title p {
+  width: 60%;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr 0.5fr;
+      grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
+  margin-left: 10em;
+}
+
+.galeria img {
+  width: 50%;
+  padding: 3px;
+}
+
+.galeria .compra {
+  padding-left: 25px;
+}
+
+.galeria .compra .btn {
+  padding-left: 10px;
+  width: 40%;
+  height: 40%;
+}
+
 /* font-size: rem
 width: % in combination with a max-width, ch
 height: question urself "do i rly need to set height" if yes -> use a min-height
