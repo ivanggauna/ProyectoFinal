@@ -1,3 +1,44 @@
 hr{
     width: 10%;
 }
+
+
+.mainBlog{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'aside imagenes';
+
+}
+
+.uno{
+    background-color: aqua;
+    height: auto;
+    width: auto;
+    grid-area: aside;
+}
+.dos{
+    background-color: rgb(229, 255, 0);
+    height: auto;
+    width: auto;
+    grid-area: imagenes;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: red 5px solid;
+   
+    div{
+         
+   margin-left: 10em;
+         
+    img{
+        width:50%;
+        
+    }
+
+    }
+    
+   
+}
+
+
