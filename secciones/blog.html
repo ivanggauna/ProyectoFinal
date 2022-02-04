@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    
     <title>Tienda Gundam</title>
 </head>
 
@@ -29,35 +30,37 @@
 
 
     </header>
+   
     <!-- Main -->
     <main class="mainBlog">
         <div class="uno">
             <aside>
-                <nav aria-label="breadcrumb">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page"><a>Inicio</a> > blog</li>
+                      <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Blog</li>
                     </ol>
-                </nav>
+                    </nav>
                 <div>
                     <h3>Categorías</h3>
                 </div>
                 <hr>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="../secciones/productos.html">Productos</a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="../secciones/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pinturas</a>
+                        <a class="nav-link" href="../secciones/pinturas.html">Pinturas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
                     </li>
                     </li>
             </aside>
@@ -67,34 +70,40 @@
 
 
 
-
+        <!-- galeria -->
 
         <div class="dos">
+            <div class="imgContainer">
+                <div class="imgCol">
+                    <div class="imagen1">
+                        <img src="../imagenes/hgAsmodeus.jpg" alt="">
+                        <h4>HG Asmodeus 1/144</h4>
+                        <p>Pre-orden: Se espera para abril 2022.</p>
+                    </div>
 
-            <div class="imagen1 img-fluid">
-                <img src="../imagenes/hgAsmodeus.jpg" alt="">  
-                <p>ASdasdasd</p>    
-            </div>
-            <div class="imagen2 img-fluid">
-                <img src="../imagenes/hgSiegrune.jpg" alt="">
-                <p>ASdasdasd</p>  
+                    <div class="imagen2 ">
+                        <img src="../imagenes/hgSiegrune.jpg" alt="">
+                        <h4>HG Siegrune 1/144</h4>
+                        <p>Pre-orden: Se espera para julio 2022.</p>
+                    </div>
+                </div>
+
                
-             </div>
-            <div class="imagen3 img-fluid">
-                <img src="../imagenes/mgRickDom.jpg" alt=""> 
-                <p>ASdasdasd</p>  
+                <div class="imgCol">
+                    <div class="imagen3 ">
+                        <img src="../imagenes/mgRickDom.jpg" alt="">
+                        <h4>MG Rick-Dom 1/100</h4>
+                        <p>Pre-orden: Se espera para marzo 2022.</p>
+                    </div>
+
+                    <div class="imagen4 ">
+                        <img src="../imagenes/rgGodGundam.jpg" alt="">
+                        <h4>RG God Gundam 1/144</h4>
+                        <p>Pre-orden: Se espera para junio 2022.</p>
+                    </div>
+                </div>
             </div>
-            <div class="imagen4 img-fluid">
-                <img src="../imagenes/rgGodGundam.jpg" alt="">
-                <p>ASdasdasd</p>  
-            </div>
-
-
-
-
-
-
-
+           
         </div>
 
 
