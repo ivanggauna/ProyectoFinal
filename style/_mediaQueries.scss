@@ -1,0 +1,360 @@
+/* Query mobile */
+@media screen and (max-width: 480px) and (min-width: 280px) {
+
+
+    /* nav y logo */
+
+    .primary-header {
+        background-color: #0e131f;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+
+            img {
+                padding: 20px 0 0 20px;
+                width: auto;
+                height: auto;
+
+            }
+
+            ul {
+                color: white;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-top: 4rem;
+
+
+                    a {
+                        display: inline-block;
+                        padding: 0.5em;
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+    /* Secciones del centro del blog */
+
+    /* aside */
+
+
+    .mainBlog {
+        background-color: #0e131f;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'aside imagenes';
+        background-color: #0e131f;
+        margin: 1em;
+
+    }
+
+
+    .uno {
+        margin-left: 8em;
+        height: auto;
+        width: auto;
+        grid-area: aside;
+
+        .breadcrumb {
+            text-decoration: none;
+        }
+
+
+        a {
+            color: white;
+
+            &:hover {
+
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* imagenes */
+    .dos {
+
+        height: auto;
+        width: auto;
+        grid-area: imagenes;
+
+
+
+
+
+        .imgContainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-end;
+
+
+
+
+
+
+            .imgCol {
+                width: 90%;
+
+
+            }
+
+            div {
+                margin-left: 1em;
+
+                img {
+                    width: 90%;
+
+                }
+            }
+        }
+
+
+    }
+
+
+    
+    /* Seccion pinturas */
+
+/* titulo pinturas */
+
+    .vallejo-title {
+        display: inline;
+        justify-content: flex-start;
+        color: white;
+        padding: 50px;   
+    
+        font-size: 1rem;
+    
+        h3 {
+            width: 60%;
+            margin-left: 0.5em;
+        }
+    
+        p {
+            width: 60%;
+            font-size: 80%;
+            margin-left: 1em;
+        }
+    
+    }
+
+    /* galeria pinturas */
+
+    .galeria {
+
+        width: 100%;
+
+        img {
+            width: 50%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            color: white;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            padding-bottom: 1em;
+            width: 30%;
+
+
+            .btn {
+                margin-left: 0.05em;
+                width: 60%;
+                font-size: 60%;
+
+            }
+        }
+    }
+}
+
+
+
+
+/* media query para tablet */
+
+@media screen and (min-width: 768px) {
+
+
+/* seccion blog */
+
+    .dos {
+
+        height: auto;
+        width: auto;
+        grid-area: imagenes;
+
+        .imgContainer {
+            display: flex;           
+            flex-wrap: wrap;           
+            font-size: 0.7rem;
+
+
+
+            .imgCol {
+                width: 90%;
+
+
+            }
+
+            div {
+                margin-left: 1em;
+
+                img {
+                    width: 90%;
+
+                }
+            }
+        }
+
+    }
+
+
+    /* Seccion de imagenes pintura */
+
+    .galeria {
+
+        width: 100%;
+
+        img {
+            width: 50%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            color: white;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            padding-bottom: 1em;
+            
+
+
+            .btn {
+                margin-left: 0.2em;
+                width: 50%;
+
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+   
+   
+   /* titulo pinturas */
+
+   .vallejo-title {
+    display: inline;
+    justify-content: flex-start;
+    color: white;
+    padding-bottom: 5em;
+    
+
+    font-size: 1.5rem;
+
+    h3 {
+        width: 60%;
+        margin-left: 0.7em;
+    }
+
+    p {
+        width: 60%;
+        font-size: 80%;
+        margin-left: 1em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+
+}
+   
+   
+   
+   
+    /* Seccion de imagenes pintura */
+
+    .galeria {
+        font-size: 1.2rem;
+
+        width: 100%;
+
+        img {
+            width: 50%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            color: white;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            padding-bottom: 1em;
+            width: 30%;
+
+
+            .btn {
+                margin-left: 0.2em;
+
+
+            }
+        }
+    }
+
+}

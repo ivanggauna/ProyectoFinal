@@ -45,49 +45,51 @@ body{
 /* Imagenes */
 
 .dos{
-  
-    height: auto;
-    width: auto;
     grid-area: imagenes;
     /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
-   
-   
-
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    'img1''img2'
+    'img3''img4'; */
     
-    .imgContainer{
+  
+
+    .imgContainer {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:center ;
-        font-size: 1rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
 
-        .imgCol{
-            width: 40%;
-            
+        width: 50%;
+
+        .imagen1{
+            grid-area: img1;
         }
-           
-
-            img{
-                width: 50%;
-            }
+       
+        .imagen2{
+            grid-area: img2;
+        }
+        .imagen3{
+            grid-area: img3;
+        }
+        .imagen4{
+            grid-area: img4;
+        }
     }
 
+
+    img{
+        width: 50%;
+    }
+    
+    
+   
 
     
 
 
-   /*  div{
-         
-   margin-left: 10em;
-         
-    img{
-        width:50%;
-        
-    }
-
-    } */
+   
     
    
 }
