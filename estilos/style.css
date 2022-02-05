@@ -288,10 +288,11 @@ body {
       grid-template-areas: 'aside imagenes';
   background-color: #0e131f;
   margin: 1em;
+  /* Menu aside */
+  /* Imagenes */
 }
 
-/* Menu aside */
-.uno {
+.mainBlog .uno {
   margin-left: 8em;
   height: auto;
   width: auto;
@@ -300,62 +301,43 @@ body {
   grid-area: aside;
 }
 
-.uno .breadcrumb {
+.mainBlog .uno .breadcrumb {
   text-decoration: none;
 }
 
-.uno a {
+.mainBlog .uno a {
   color: white;
 }
 
-.uno a:hover {
+.mainBlog .uno a:hover {
   text-decoration: underline;
 }
 
-/* Imagenes */
-.dos {
+.mainBlog .dos {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imagenes;
-  /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: 
-    'img1''img2'
-    'img3''img4'; */
 }
 
-.dos .imgContainer {
+.mainBlog .dos .imgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 50%;
+  height: 50%;
 }
 
-.dos .imgContainer .imagen1 {
-  grid-area: img1;
-}
-
-.dos .imgContainer .imagen2 {
-  grid-area: img2;
-}
-
-.dos .imgContainer .imagen3 {
-  grid-area: img3;
-}
-
-.dos .imgContainer .imagen4 {
-  grid-area: img4;
-}
-
-.dos img {
-  width: 50%;
+.mainBlog .dos .imgContainer img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Query mobile */
