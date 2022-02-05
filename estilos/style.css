@@ -226,7 +226,7 @@ main {
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: white;
-  margin-left: 12.7em;
+  margin-left: 16.2em;
   font-size: 1rem;
 }
 
@@ -297,7 +297,9 @@ body {
   height: auto;
   width: auto;
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: aside;
 }
 
@@ -315,7 +317,9 @@ body {
 
 .mainBlog .dos {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: imagenes;
 }
 
@@ -327,17 +331,49 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: 50%;
-  height: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
 }
 
-.mainBlog .dos .imgContainer img {
-  width: 90%;
-  height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.mainBlog .dos .imgContainer .imgCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.mainBlog .dos .imgContainer .imgCol div {
+  padding: 5px;
+}
+
+.mainBlog .dos .imgContainer .imgCol div img {
+  width: 80%;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 div {
+  padding: 5px;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 div img {
+  width: 80%;
 }
 
 /* Query mobile */
@@ -399,7 +435,9 @@ body {
     height: auto;
     width: auto;
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 1;
+    grid-column: 1;
     grid-area: aside;
   }
   .uno .breadcrumb {
@@ -416,7 +454,9 @@ body {
     height: auto;
     width: auto;
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 2;
+    grid-column: 2;
     grid-area: imagenes;
   }
   .dos .imgContainer {
@@ -435,10 +475,19 @@ body {
   .dos .imgContainer .imgCol {
     width: 90%;
   }
-  .dos .imgContainer div {
+  .dos .imgContainer .imgCol div {
     margin-left: 1em;
   }
-  .dos .imgContainer div img {
+  .dos .imgContainer .imgCol div img {
+    width: 90%;
+  }
+  .dos .imgContainer .imgCol2 {
+    width: 90%;
+  }
+  .dos .imgContainer .imgCol2 div {
+    margin-left: 1em;
+  }
+  .dos .imgContainer .imgCol2 div img {
     width: 90%;
   }
   /* Seccion pinturas */
@@ -495,28 +544,57 @@ body {
 @media screen and (min-width: 768px) {
   /* seccion blog */
   .dos {
-    height: auto;
-    width: auto;
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 2;
+    grid-column: 2;
     grid-area: imagenes;
   }
   .dos .imgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 0.7rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 0.5rem;
   }
   .dos .imgContainer .imgCol {
-    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
   }
-  .dos .imgContainer div {
-    margin-left: 1em;
+  .dos .imgContainer .imgCol div {
+    padding: 5px;
   }
-  .dos .imgContainer div img {
-    width: 90%;
+  .dos .imgContainer .imgCol div img {
+    width: 80%;
+  }
+  .dos .imgContainer .imgCol2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .dos .imgContainer .imgCol2 div {
+    padding: 5px;
+  }
+  .dos .imgContainer .imgCol2 div img {
+    width: 80%;
   }
   /* Seccion de imagenes pintura */
   .galeria {

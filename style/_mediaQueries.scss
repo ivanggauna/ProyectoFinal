@@ -121,12 +121,9 @@
 
 
             .imgCol {
-                width: 90%;
+               width: 90%;
 
-
-            }
-
-            div {
+               div {
                 margin-left: 1em;
 
                 img {
@@ -134,6 +131,22 @@
 
                 }
             }
+            }
+
+            .imgCol2 {
+                width: 90%;
+ 
+                div {
+                 margin-left: 1em;
+ 
+                 img {
+                     width: 90%;
+ 
+                 }
+             }
+             }
+
+           
         }
 
 
@@ -208,6 +221,7 @@
 
 
 
+
 /* media query para tablet */
 
 @media screen and (min-width: 768px) {
@@ -215,36 +229,58 @@
 
 /* seccion blog */
 
-    .dos {
+.dos {
+    
+    grid-area: imagenes;
 
-        height: auto;
-        width: auto;
-        grid-area: imagenes;
-
-        .imgContainer {
-            display: flex;           
-            flex-wrap: wrap;           
-            font-size: 0.7rem;
-
-
-
-            .imgCol {
-                width: 90%;
-
-
-            }
-
-            div {
-                margin-left: 1em;
-
-                img {
-                    width: 90%;
-
+    .imgContainer {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;           
+       justify-content: space-between;
+       font-size: 0.5rem;
+       
+      
+       .imgCol{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            div{
+                padding: 5px;
+                img{
+                    width: 80%;
                 }
+           
+
+          
+           
+       }
+    }
+       
+       .imgCol2{
+           display: flex;
+           flex-direction: row;
+           div{
+            padding: 5px;
+            img{
+                width: 80%;
             }
         }
+          
+           
+           
+           
+           
+       }
 
+      
+
+        
+        
     }
+
+}
+
 
 
     /* Seccion de imagenes pintura */
@@ -284,8 +320,8 @@
         }
     }
 
-
 }
+
 
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
    

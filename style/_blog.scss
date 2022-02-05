@@ -49,18 +49,44 @@ body{
         .imgContainer {
            display: flex;
            flex-direction: row;
-           flex-wrap: nowrap;
+           flex-wrap: wrap;           
+           justify-content: space-between;
+           font-size: 1.3rem;
            
-           width: 50%;
-           height: 50%;
-            
+          
+           .imgCol{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                div{
+                    padding: 5px;
+                    img{
+                        width: 80%;
+                    }
+               
+
+              
+               
+           }
+        }
            
-           img{
-                width: 90%;
-                height: 90%;
-                object-fit: cover;
+           .imgCol2{
+               display: flex;
+               flex-direction: row;
+               div{
+                padding: 5px;
+                img{
+                    width: 80%;
+                }
             }
-    
+              
+               
+               
+               
+               
+           }
+
+          
     
             
             
