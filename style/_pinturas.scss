@@ -35,33 +35,35 @@
 /* Seccion de imagenes */
 
 .galeria {
-  
-   width: 100%;
-  
-   img{
-       width: 50%;
-   }
 
-   /* Precios */
-   .precio{
-       margin-top: -1em;
-   }
+    width: 100%;
 
-   /* Texto debajo de las imagenes */
-   p{
-       color: white;
-       width: 50%;       
-       text-align: center;
-   }
+    img {
+        width: 100%;
+    }
 
-   /* Div de los botones para posicionarlos */
-   .btnDiv{
-       margin-top: -0.7em;
-       padding-bottom: 1em;
+    /* Precios */
+    .precio {
+        margin-top: -1em;
+    }
 
-   .btn{
-       margin-left: 3.5em;
+    /* Texto debajo de las imagenes */
+    p {
+        margin-left: 1.5em;
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Div de los botones para posicionarlos */
+    .btnDiv {
+        margin-top: -0.7em;
+        padding-bottom: 1em;
        
-   }
-}
+       
+        .btn {
+            min-height: 1em;
+
+        }
+    }
 }

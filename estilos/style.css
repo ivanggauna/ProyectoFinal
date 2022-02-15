@@ -7,12 +7,12 @@
 }
 
 body {
-  /* background-image: url('../imagenes/backgroundimage.jpg'); */
   background-color: #0e131f;
 }
 
 .primary-header {
   background-color: #0e131f;
+  font-size: 1.3rem;
 }
 
 .primary-header nav {
@@ -90,8 +90,7 @@ main {
 
 .main-section .main-image {
   padding: 2em;
-  background-color: hotpink;
-  background-image: url("../imagenes/fondoImagenes.jpg");
+  background-image: url("../imagenes/fondoImagenes.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +124,7 @@ main {
 }
 
 .third-header div {
-  background-image: url("../imagenes/backgroundTextos.png");
+  background-image: url("../imagenes/backgroundTextos.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +146,7 @@ main {
 }
 
 .secondary-section ul {
-  background-image: url("../imagenes/backgroundTextos.png");
+  background-image: url("../imagenes/backgroundTextos.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +177,7 @@ main {
 }
 
 .main-footer {
-  background-image: url("../imagenes/backgroundFooter.jpeg");
+  background-image: url("../imagenes/backgroundFooter.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,7 +246,7 @@ main {
 }
 
 .galeria img {
-  width: 50%;
+  width: 100%;
 }
 
 .galeria .precio {
@@ -255,8 +254,9 @@ main {
 }
 
 .galeria p {
+  margin-left: 1.5em;
   color: white;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
@@ -266,7 +266,7 @@ main {
 }
 
 .galeria .btnDiv .btn {
-  margin-left: 3.5em;
+  min-height: 1em;
 }
 
 hr {
@@ -297,9 +297,7 @@ body {
   height: auto;
   width: auto;
   -ms-grid-row: 1;
-  grid-row: 1;
   -ms-grid-column: 1;
-  grid-column: 1;
   grid-area: aside;
 }
 
@@ -317,9 +315,7 @@ body {
 
 .mainBlog .dos {
   -ms-grid-row: 1;
-  grid-row: 1;
   -ms-grid-column: 2;
-  grid-column: 2;
   grid-area: imagenes;
 }
 
@@ -376,9 +372,62 @@ body {
   width: 80%;
 }
 
+.header-formulario {
+  color: white;
+}
+
+.header-formulario h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-formulario {
+  color: white;
+  border: 1px solid grey;
+  width: 70%;
+  margin: 1em 0 1em 15em;
+}
+
+.section-formulario .mb-3 {
+  padding: 1em;
+}
+
+.header-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.galeria-products {
+  color: whitesmoke;
+}
+
+.galeria-products p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.galeria-products .btnDiv {
+  padding: 0.5em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.galeria-products .btnDiv .btn {
+  min-height: 4em;
+}
+
 /* Query mobile */
-@media screen and (max-width: 480px) and (min-width: 280px) {
-  /* nav y logo */
+@media (max-width: 480px) and (min-width: 280px) {
   .primary-header {
     background-color: #0e131f;
   }
@@ -431,13 +480,11 @@ body {
     margin: 1em;
   }
   .uno {
-    margin-left: 8em;
+    margin-right: 5em;
     height: auto;
     width: auto;
     -ms-grid-row: 1;
-    grid-row: 1;
     -ms-grid-column: 1;
-    grid-column: 1;
     grid-area: aside;
   }
   .uno .breadcrumb {
@@ -451,26 +498,20 @@ body {
   }
   /* imagenes */
   .dos {
-    height: auto;
-    width: auto;
     -ms-grid-row: 1;
-    grid-row: 1;
     -ms-grid-column: 2;
-    grid-column: 2;
     grid-area: imagenes;
   }
   .dos .imgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
   }
   .dos .imgContainer .imgCol {
     width: 90%;
@@ -518,42 +559,89 @@ body {
     /* Div de los botones para posicionarlos */
   }
   .galeria img {
-    width: 50%;
+    margin-left: 1em;
+    width: 80%;
   }
   .galeria .precio {
     margin-top: -1em;
   }
   .galeria p {
+    margin-right: 1.7em;
     color: white;
-    width: 50%;
-    text-align: center;
+    width: 80%;
+    text-align: start;
+    font-size: 0.7rem;
   }
   .galeria .btnDiv {
     margin-top: -0.7em;
     padding-bottom: 1em;
-    width: 30%;
+    margin-left: 1em;
   }
   .galeria .btnDiv .btn {
-    margin-left: 0.05em;
-    width: 60%;
+    min-height: 1em;
     font-size: 60%;
+  }
+  /* Contactos */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 4em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* Productos */
+  .header-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: whitesmoke;
+    padding: 1em;
+  }
+  .galeria-products {
+    color: whitesmoke;
+  }
+  .galeria-products p {
+    margin-left: 0em;
+    font-size: 0.8em;
+  }
+  .galeria-products .btnDiv {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    width: 60%;
+  }
+  .galeria-products .btnDiv .btn {
+    min-height: 4em;
   }
 }
 
 /* media query para tablet */
-@media screen and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   /* seccion blog */
+  .uno {
+    margin-right: 5em;
+  }
   .dos {
     -ms-grid-row: 1;
-    grid-row: 1;
     -ms-grid-column: 2;
-    grid-column: 2;
     grid-area: imagenes;
   }
   .dos .imgContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -604,27 +692,73 @@ body {
     /* Div de los botones para posicionarlos */
   }
   .galeria img {
-    width: 50%;
+    width: 80%;
   }
   .galeria .precio {
     margin-top: -1em;
   }
   .galeria p {
+    margin-left: 1.5em;
     color: white;
-    width: 50%;
+    width: 60%;
     text-align: center;
   }
   .galeria .btnDiv {
     margin-top: -0.7em;
     padding-bottom: 1em;
+    margin-left: 2em;
   }
   .galeria .btnDiv .btn {
-    margin-left: 0.2em;
-    width: 50%;
+    min-height: 1em;
+  }
+  /* Contactos */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 8em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* Productos */
+  .header-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: whitesmoke;
+    padding: 1em;
+  }
+  .galeria-products {
+    color: whitesmoke;
+  }
+  .galeria-products p {
+    font-size: 1.2em;
+  }
+  .galeria-products .btnDiv {
+    padding: 0.5em;
+    margin-left: 0.5em;
+  }
+  .galeria-products .btnDiv .btn {
+    min-height: 4em;
   }
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media (max-width: 2560px) and (min-width: 1024px) {
   /* titulo pinturas */
   .vallejo-title {
     display: inline;
@@ -655,23 +789,66 @@ body {
     /* Div de los botones para posicionarlos */
   }
   .galeria img {
-    width: 50%;
+    width: 100%;
   }
   .galeria .precio {
     margin-top: -1em;
   }
   .galeria p {
     color: white;
-    width: 50%;
     text-align: center;
   }
   .galeria .btnDiv {
     margin-top: -0.7em;
-    padding-bottom: 1em;
-    width: 30%;
+    text-align: center;
+    margin-right: 1em;
   }
   .galeria .btnDiv .btn {
-    margin-left: 0.2em;
+    min-height: 3em;
+  }
+  /* contacto */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 15em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* Productos */
+  .header-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: whitesmoke;
+    padding: 1em;
+  }
+  .galeria-products {
+    color: whitesmoke;
+  }
+  .galeria-products p {
+    font-size: 1.3em;
+  }
+  .galeria-products .btnDiv {
+    padding: 0.5em;
+  }
+  .galeria-products .btnDiv .btn {
+    min-height: 4em;
   }
 }
 

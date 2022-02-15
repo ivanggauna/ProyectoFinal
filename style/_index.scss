@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-     /* background-image: url('../imagenes/backgroundimage.jpg'); */ 
-    
-     background-color: #0e131f
-} 
+body {    
+
+    background-color: #0e131f
+}
 
 
 
 .primary-header {
     background-color: #0e131f;
+    font-size: 1.3rem;
 
     nav {
         display: flex;
@@ -53,4 +53,3 @@ body{
 
 
 }
-

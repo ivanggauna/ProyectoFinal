@@ -1,6 +1,6 @@
 .main-footer {
-    background-image: url('../imagenes/backgroundFooter.jpeg');
-    background-position:center;
+    background-image: url('../imagenes/backgroundFooter.webp');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -9,15 +9,17 @@
     font-family: 'Teko', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+
 }
 
-.section-contact{
+.section-contact {
     color: white;
 
-    h3{
-        padding: 10px 10px 10px ;
+    h3 {
+        padding: 10px 10px 10px;
     }
-    div{
+
+    div {
         padding: 10px 10px 10px;
     }
 }

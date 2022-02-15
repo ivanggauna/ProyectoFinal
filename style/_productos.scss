@@ -1,0 +1,29 @@
+.header-products {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+
+    padding: 1em;
+}
+
+.galeria-products {
+    color: whitesmoke;
+
+    p {
+
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .btnDiv {
+        padding: 0.5em;
+        margin-left: 1em;
+        text-align: center;
+
+        .btn {
+            min-height: 4em;
+
+        }
+
+    }
+}
